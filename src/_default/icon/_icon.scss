@@ -1,0 +1,29 @@
+.gc-icon{
+  font-size: 0;
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  color: $color-gray;
+  transition: color 0.2s ease;
+  line-height: 1;
+}
+.gc-icon_sm{
+  font-size: 16px !important;
+}
+.gc-icon_md{
+  font-size: 22px !important;
+}
+.gc-icon_lg{
+  font-size: 30px !important;;
+}
+.gc-icon_xl{
+  font-size: 52px !important;;
+}
+.gc-icon_xxl{
+  font-size: 74px !important;;
+}
+.gc-icon_highlight{
+  &:hover{
+    color: $color-blue;
+  }
+}

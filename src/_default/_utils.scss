@@ -1,0 +1,100 @@
+.gc-z-index1{
+  z-index: 1;
+}
+.gc-align-middle{
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.gc-text-left{
+  text-align: left;
+}
+.gc-text-center{
+  text-align: center;
+}
+.gc-text-right{
+  text-align: right;
+}
+.gc-link{
+  font-family: $semi-bold;
+  font-size: 15px;
+}
+.gc-cells{
+  >div{
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+/* Скрытое поле для загрузки xsl */
+.gc-hidden-upload{
+  position: relative;
+  overflow: hidden;
+}
+.gc-hidden-upload input[type='file']{
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0); /*IE*/
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+.gc-hidden{
+  display: none;
+}
+/*Indent for shift content when open sidebar*/
+.gc-indent{
+  padding-left: $sidebar-width;
+  transition: padding-left 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+.gc-inherit-height{
+  height: inherit;
+}
+
+.gc-vertical-centering{
+  /*WARNING: This option is acceptable if parents have full height.*/
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.gc-list-disk{
+  list-style: disc;
+  padding-left: 15px;
+}
+.gc-full-height{
+  height: 100%;
+}
+
+.gc-space-between{
+  /*WARNING: This method only works with uncompressed HTML and requires a fixed height on the container*/
+  text-align: justify;
+  font-size: 0.04px;
+  &::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+  & > :nth-child(1n + 1){
+    display: inline-block;
+    font-size: initial;
+  }
+}
+
+.gc-child-vertical-align{
+  & > :nth-child(1n + 1){
+    vertical-align: middle;
+  }
+}
+.gc-child-inline-block{
+  /*font-size: 0 - for remove space between el */
+  font-size: 0;
+  & > :nth-child(1n + 1){
+    display: inline-block;
+  }
+}

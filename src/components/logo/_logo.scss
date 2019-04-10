@@ -1,0 +1,11 @@
+.gc-logo{
+    font-size: 30px;
+    font-family: $bold;
+    text-decoration: none;
+    display: inline-block;
+    line-height: $top-line-height;
+    @include text-gradient(120, #495AFF, #0ACFFE, $color-white);
+}
+.gc-log_secondary{
+    @include text-gradient(120, $color-green, $color-green-light, $color-green-light);
+}

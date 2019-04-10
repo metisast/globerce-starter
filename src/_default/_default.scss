@@ -1,0 +1,77 @@
+@include font-face($regular, './fonts/MuseoSansCyrl-300/MuseoSansCyrl-300', 'MuseoSansCyrl-300');
+@include font-face($semi-bold, './fonts/MuseoSansCyrl-500/MuseoSansCyrl-500', 'MuseoSansCyrl-500');
+@include font-face($bold, './fonts/MuseoSansCyrl-700/MuseoSansCyrl-700', 'MuseoSansCyrl-700');
+
+body{
+  background-color: $color-body;
+  font-family: $regular;
+}
+.gc-main{
+  //padding-left: $sidebar-width;
+}
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+  font-family: $regular;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $color-blue-dark;
+}
+h1{
+  font-size: 36px;
+}
+h2{
+  font-size: 32px;
+}
+h3{
+  font-size: 28px;
+}
+h4{
+  font-size: 24px;
+}
+h5{
+  font-size: 20px;
+}
+h6{
+  font-size: 16px;
+}
+p{
+  margin-top: 0;
+}
+a{
+  color: $color-blue-dark;
+  text-decoration: none;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p{
+  margin-bottom: 10px;
+}
+small, a, p, span, strong{
+  color: $color-blue-dark;
+  font-size: 15px;
+}
+small{
+  font-size: 13px;
+}
+strong{
+  font-family: $semi-bold;
+  font-weight: normal;
+}
+a{
+  color: $color-blue;
+  &:hover{
+    text-decoration: underline;
+  }
+  strong{
+    color: $color-blue;
+  }
+}
+hr{
+  margin: 15px 0;
+  border-color: $color-gray-light;
+  border-style: solid;
+  border-width: 0.5px;
+}

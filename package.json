@@ -1,0 +1,58 @@
+{
+  "name": "gb-static",
+  "version": "1.0.0",
+  "description": "Globerce Ecom project assets files",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config ./build/webpack.dev.config.js",
+    "build": "webpack --config ./build/webpack.prod.config.js",
+    "watch": "webpack --watch --config ./build/webpack.dev.config.js",
+    "pug": "pug ./src -P -o ./public/",
+    "watch-pug": "pug ./src -P -w -o ./public/",
+    "server": "http-server -p 8888 -c -1",
+    "api": "node server"
+  },
+  "keywords": [
+    "globerce",
+    "ecom"
+  ],
+  "author": "Kurnossov Yevgeniy",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.5",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.4",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "bootstrap": "^4.2.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "cors": "^2.8.5",
+    "css-loader": "^1.0.1",
+    "express": "^4.16.4",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^2.0.0",
+    "fork-ts-checker-webpack-plugin": "^0.5.2",
+    "http-server": "^0.11.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "resolve-url-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.2",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "@types/codemirror": "0.0.72",
+    "codemirror": "^5.43.0"
+  }
+}

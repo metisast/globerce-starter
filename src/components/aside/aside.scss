@@ -1,0 +1,13 @@
+.gc-aside{
+}
+.gc-aside_l-hide{
+  left: 0;
+  transform: translateX(-100%);
+}
+.gc-aside_r-hide{
+  right: 0;
+  transform: translateX(100%);
+}
+.gc-aside_show{
+  transform: translateX(0);
+}
